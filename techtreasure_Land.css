@@ -1,0 +1,71 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header .search-bar input {
+            width: 400px;
+            padding: 5px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('banner-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+        .main-banner h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .main-banner p {
+            font-size: 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .deal-of-the-day, .top-categories, .new-releases {
+            margin-bottom: 20px;
+        }
+        .deal-of-the-day img, .top-categories img, .new-releases img {
+            width: 100%;
+            height: auto;
+        }
+        .deal-of-the-day .product-info, .top-categories .category, .new-releases .product {
+            text-align: center;
+        }
+        .button {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
