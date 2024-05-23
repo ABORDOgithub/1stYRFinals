@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone: Your Ultimate Technology Marketplace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header .search-bar input {
+            width: 400px;
+            padding: 5px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('banner-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+        .main-banner h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .main-banner p {
+            font-size: 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .deal-of-the-day, .top-categories, .new-releases {
+            margin-bottom: 20px;
+        }
+        .deal-of-the-day img, .top-categories img, .new-releases img {
+            width: 100%;
+            height: auto;
+        }
+        .deal-of-the-day .product-info, .top-categories .category, .new-releases .product {
+            text-align: center;
+        }
+        .button {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">TechZone</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for gadgets, software, accessories...">
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Deals</a>
+        <a href="#">New Releases</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Orders</a>
+        <a href="#">Cart</a>
+    </nav>
+</header>
+
+<div class="main-banner">
+    <h1>Explore the Future of Technology</h1>
+    <p>Unbeatable Prices on the Latest Tech</p>
+</div>
+
+<div class="container">
+    <section class="deal-of-the-day">
+        <h2>Deal of the Day</h2>
+        <div class="product-info">
+            <img src="deal-product.jpg" alt="Deal of the Day">
+            <p>Latest Gadget - Up to 50% off today only!</p>
+            <a href="#" class="button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="top-categories">
+        <h2>Top Categories</h2>
+        <div class="grid">
+            <div class="category">
+                <img src="smartphones.jpg" alt="Smartphones">
+                <p>Smartphones</p>
+            </div>
+            <div class="category">
+                <img src="laptops.jpg" alt="Laptops">
+                <p>Laptops</p>
+            </div>
+            <div class="category">
+                <img src="smart-home.jpg" alt="Smart Home">
+                <p>Smart Home</p>
+            </div>
+            <div class="category">
+                <img src="gaming.jpg" alt="Gaming">
+                <p>Gaming</p>
+            </div>
+            <div class="category">
+                <img src="wearables.jpg" alt="Wearables">
+                <p>Wearables</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="new-releases">
+        <h2>New Releases</h2>
+        <div class="grid">
+            <div class="product">
+                <img src="new-product1.jpg" alt="New Product 1">
+                <p>New Product 1</p>
+            </div>
+            <div class="product">
+                <img src="new-product2.jpg" alt="New Product 2">
+                <p>New Product 2</p>
+            </div>
+            <div class="product">
+                <img src="new-product3.jpg" alt="New Product 3">
+                <p>New Product 3</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
