@@ -4,7 +4,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-
+li{
+	font-size: 30px;
+}
 header {
     font-family: 'Jomhuria';
     background-color: #333;
@@ -13,10 +15,13 @@ header {
     text-align: left;
     padding-bottom: 20px;
 }
+
 header h3{
 	padding-left: 30px;
 	font-family: Jomhuria;
-	
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 header img {
     max-height: 50px;
@@ -67,33 +72,48 @@ main {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    max-width: 300px;
-    text-align: center;
+    max-width: 99%;
+	display: flex;
+	height: 500px;
 }
 
 .product-image {
-    max-width: 100%;
-    height: auto;
+    height: 360px;
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
 }
-
-.product-details h2 {
-    font-size: 1.5em;
-    margin: 0;
+.product-image_container{
+	display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 20px, 10px, 20px, 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+	width: 360px;
+	margin-right: 10px;
+	height: 360px;
 }
+.product-details {
+            text-align: left;
+			font-family: 'Jomhuria';
+        }
 
-.product-description {
-    font-size: 1em;
-    color: #666;
-    margin: 10px 0;
-}
+        .product-details h2 {
+            font-size: 4em;
+            margin-bottom: 10px;
+        }
 
-.product-price {
-    font-size: 1.2em;
-    color: #000;
-    margin: 10px 0;
-}
+        .product-details p {
+            margin-bottom: 15px;
+			font-size: 3em;
+        }
+
+        .product-price {
+            font-size: 1.5em;
+            color: #f66;
+            margin-top: 15px;
+        }
 
 .add-to-cart {
     background-color: #28a745;
@@ -106,6 +126,35 @@ main {
 
 .add-to-cart:hover {
     background-color: #218838;
+}
+
+.popular{
+	margin-top: 20px;
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    height: 220px;
+	width: 40%;
+}
+.popular-container{
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    height: 180px;
+	width: 180px;
+	margin-bottom: 10px;
+}
+.popular-container img{
+	height: 160px;
+	width: 160px;
 }
 .footer {
     background-color: #333;
