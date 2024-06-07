@@ -1,71 +1,250 @@
- body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #232f3e;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        header .search-bar input {
-            width: 400px;
-            padding: 5px;
-        }
-        nav {
-            display: flex;
-            gap: 15px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-        .main-banner {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: url('banner-image.jpg') no-repeat center center/cover;
-            height: 300px;
-            color: white;
-            text-align: center;
-            flex-direction: column;
-        }
-        .main-banner h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-        .main-banner p {
-            font-size: 20px;
-        }
-        .container {
-            padding: 20px;
-        }
-        .deal-of-the-day, .top-categories, .new-releases {
-            margin-bottom: 20px;
-        }
-        .deal-of-the-day img, .top-categories img, .new-releases img {
-            width: 100%;
-            height: auto;
-        }
-        .deal-of-the-day .product-info, .top-categories .category, .new-releases .product {
-            text-align: center;
-        }
-        .button {
-            background-color: #ff9900;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 10px;
-        }
+body {
+    font-family: 'Jomhuria';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    font-family: 'Jomhuria';
+    background-color: #333;
+    color: #fff;
+    padding: 1px 0px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+header h3{
+	padding-left: 30px;
+	font-family: Jomhuria;
+	
+}
+header img {
+    max-height: 50px;
+}
+
+nav {
+    margin-top: -50px;
+    text-align: right;
+    padding: 10px;
+}
+
+nav a {
+	font-size: 28px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.search-bar {
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar input[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.banner {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+	transition: all 1s ease;
+	object-fit: contain;
+
+}
+
+.mySlides {
+    display: none;
+}
+
+.banner img {
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.class_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 23%;
+	height: auto;
+}
+.class_container:hover{
+	transform: translateY(-5px);
+	
+}
+.categories, .top-picks, .popular {
+	margin-top: -60px;
+	font-family: Arial Sans;
+    padding: 20px;
+    text-align: center;
+	justify-content: start;
+}
+.categories h1, .top-picks h1, .popular h1{
+	font-family: "Jomhuria";
+	text-align: left;
+	font-size: 70px;
+}
+
+
+.categories img, .top-picks img, .popular img {
+    width: 100%;
+    height: 400px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.categories div, .top-picks div, .popular div {
+    display: inline-block;
+    margin: 10px;
+	
+}
+
+.categories_description{
+	font-weight: bold;
+	font-family: "Jomhuria";
+	color: white;
+	
+}
+.top-picks{
+	justify-content: space-evenly;
+	margin-top: -20px;
+	
+}
+.top-picks img{
+	height: 100px;
+	width: 100px;
+	object-fit: contain;
+	
+}
+.top-picks_container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    height: 100px;
+    flex-grow: 1;
+    justify-content: start;
+	width: 100%;
+}
+
+.popular{
+	margin-top: 20px;
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    height: 220px;
+	width: 40%;
+}
+.popular-container{
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    height: 180px;
+	width: 180px;
+	margin-bottom: 10px;
+}
+.popular-container img{
+	height: 160px;
+	width: 160px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
