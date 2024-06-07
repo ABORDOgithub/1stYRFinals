@@ -78,6 +78,7 @@ main {
 }
 
 .product-image {
+    width: 360px;
     height: 360px;
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
