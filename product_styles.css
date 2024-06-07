@@ -1,21 +1,65 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Jomhuria';
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
+    font-family: 'Jomhuria';
     background-color: #333;
     color: #fff;
-    padding: 1em 0;
-    text-align: center;
+    padding: 1px 0px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+header h3{
+	padding-left: 30px;
+	font-family: Jomhuria;
+	
+}
+header img {
+    max-height: 50px;
+}
+
+nav {
+    margin-top: -50px;
+    text-align: right;
+    padding: 10px;
+}
+
+nav a {
+	font-size: 28px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.search-bar {
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar input[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
 
 main {
     padding: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .product {
