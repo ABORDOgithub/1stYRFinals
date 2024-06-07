@@ -3,23 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechZone: Your Ultimate Technology Marketplace</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TECH TREASURE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-
-<header>
-    <div class="logo">TechTreasure</div>
-    <div class="search-bar">
-        <input type="text" placeholder="Search for gadgets, software, accessories...">
-    </div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Cart</a>
-    </nav>
-</header>
-
-
-
+    <header>
+        <h3><pre>Tech
+Treasure</pre></h3>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </div>
+        <nav>
+            <a href="#">Cart</a>
+            <a href="#">Sign In</a>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="mySlides fade">
+                <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-350-t.jpg" alt="Banner 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://pcscomputers.com.ph/wp-content/uploads/2022/02/r5-5600g-summer-1000x1000.jpg" alt="Banner 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/buy/Flip4_Carousel_GroupKV_PC.jpg?imbypass=true" alt="Banner 3">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+		<h1 style= "font-size: 70px;">CATEGORIES</h1>
+        <div class="categories">
+		<div class = "categories_description">
+			 <div class="categories">
+            <div style= "background-color: #B83D3D;" class = "class_container">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="Desktops">
+                <h2>Desktops</h2>
+            </div>
+             <div style = "background-color: #008000;"class = "class_container">
+                <img src="https://gameone.ph/media/catalog/product/cache/d378a0f20f83637cdb1392af8dc032a2/w/o/wooting_60he_lekker_linear60_keyboard_black_.jpg" alt="Gaming Accessories">
+                <h2>Gaming Accessories</h2>
+            </div>
+             <div style = "background-color: #0B0B75;"class = "class_container" >
+                <img src="https://m.media-amazon.com/images/I/71qccaRKQVL.SS700.jpg" alt="Gaming Consoles">
+                <h2>Gaming Consoles</h2>
+            </div>
+             <div style = "background-color: #DBC608;"class = "class_container">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-2-202309?wid=5120&hei=2880&fmt=webp&qlt=70&.v=UW1GeTRObi9UaVF4S3FUNERNMWVhZ2FRQXQ2R0JQTk5udUZxTkR3ZVlpSmxYQjVYZHNNY2VTR1JzeGdDU0p5NDBoUVhuTWlrY2hIK090ZGZZbk9HeE1xUVVnSHY5eU9CcGxDMkFhalkvT0NpaDU1ZGJEVWtLTUtjeDlDZWZmZ1lmbW94YnYxc1YvNXZ4emJGL0IxNFp3PT0=&traceId=1" alt="Smartphones">
+                <h2>Smartphones</h2>
+				</div>
+            </div>
+        </div>
+		<h1 style= "font-size: 70px; text-align: left; margin-bottom: -20px;" >Top Picks of the Week</h1>
+        
+		<div class="top-picks">
+        
+		<div class="top-picks_container">
+                <img src="https://ecommerce.datablitz.com.ph/cdn/shop/files/0097855137715_500x.jpg?v=1707807190" alt="Logitech G304/G305">
+               <p>Logitech G304/G305 - ₱1,995</p>
+		</div>
+		<div class="top-picks_container">
+                <img src="https://m.media-amazon.com/images/I/71qccaRKQVL.SS700.jpg" alt="Nintendo Switch Lite">
+                <p>Nintendo Switch Lite - ₱22,600</p>
+		</div>		
+		<div class="top-picks_container">
+                <img src="https://m.media-amazon.com/images/I/51K36OrmxLL._AC_SL1500_.jpg" alt="Nvidia GeForce RTX 3090 Ti">
+                <p>Nvidia GeForce RTX 3090 Ti - ₱41,000</p>
+		</div>		
+		<div class="top-picks_container">
+                <img src="https://images.anandtech.com/doci/16504/IMGP9171a_575px.jpg" alt="Samsung SSD 980">
+                <p>Samsung SSD 980 - ₱7,050</p>
+            </div>
+        </div>
+		<h1>Popular Right Now</h1>
+        <div class="popular">
+            <div class="popular-container">
+            
+                <img src="https://www.apple.com/v/macbook-air/s/images/overview/design/color/design_side_midnight__flnancj2vlme_medium.jpg" alt="MacBook">
+                <p>MacBook</p>
+            </div>
+             <div class="popular-container">
+                <img src="https://digitalwalker.ph/cdn/shop/products/AUESPEP4PASSIVESPEAKERWHITE1_1000x1000.png?v=1640232499" alt="Speaker">
+                <p>Speaker</p>
+            </div>
+             <div class="popular-container">
+                <img src="https://easypc.com.ph/cdn/shop/products/RAKK_DULUS_Gaming_PC_Case_Black-a_1200x1200.jpg?v=1703044256" alt="PC Case">
+                <p>Rakk PC Case</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 by TechTreasure.org. All Rights Reserved.</p>
+        <p>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Warranty/Returns</a>
+        </p>
+    </footer>
 </body>
 </html>
