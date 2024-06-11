@@ -27,3 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 
 }
+
+function addToCart() {
+  alert('Product added to cart!');
+}
