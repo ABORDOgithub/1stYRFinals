@@ -19,36 +19,40 @@
         }
 
         header {
-            width: 100%;
+            font-family: 'Jomhuria';
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 1px 0px;
+            text-align: left;
+            padding-bottom: 20px;
         }
-
-        header h3 {
-            font-family: 'Jomhuria', sans-serif;
-            margin: 0;
+        header h3{
             padding-left: 30px;
+            font-family: Jomhuria;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            
+        }
+        header img {
+            max-height: 50px;
         }
 
-        header .search-bar {
+        .search-bar {
+            margin-top: -60px;
             display: flex;
-            align-items: center;
-            flex-grow: 1;
             justify-content: center;
+            padding: 10px 0;
         }
 
-        header .search-bar input[type="text"] {
+        .search-bar input[type="text"] {
             width: 60%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px 0 0 5px;
         }
 
-        header .search-bar input[type="submit"] {
+        .search-bar input[type="submit"] {
             padding: 10px;
             border: none;
             background-color: orange;
@@ -57,12 +61,15 @@
             cursor: pointer;
         }
 
+
         nav {
-            margin-right: 30px;
+            margin-top: -50px;
+            text-align: right;
+            padding: 10px;
         }
 
         nav a {
-            font-size: 20px;
+            font-size: 28px;
             color: #fff;
             margin: 0 10px;
             text-decoration: none;
