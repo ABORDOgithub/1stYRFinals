@@ -5,7 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            font-family: 'Jomhuria';
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 1px 0px;
+            text-align: left;
+            padding-bottom: 20px;
+        }
+
+        header h3 {
+            padding-left: 30px;
+        }
+
+        nav {
+            text-align: right;
+            padding: 10px;
+        }
+
+        nav a {
+            font-size: 28px;
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .search-bar input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-bar input[type="submit"] {
+            padding: 10px;
+            border: none;
+            background-color: orange;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .terms-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .terms-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .terms-container p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,17 +124,20 @@ Treasure</pre></h3></a>
         </nav>
     </header>
     <main>
-        <h1>Terms of Use</h1>
-        <p>Welcome to Tech Treasure! These terms and conditions outline the rules and regulations for the use of our website.</p>
-        <h2>Introduction</h2>
-        <p>By accessing this website, you accept these terms and conditions in full. Do not continue to use Tech Treasure if you do not accept all of the terms and conditions stated on this page.</p>
-        <h2>License</h2>
-        <p>Unless otherwise stated, Tech Treasure and/or its licensors own the intellectual property rights for all material on Tech Treasure. All intellectual property rights are reserved.</p>
-        <h2>User Comments</h2>
-        <p>Certain parts of this website offer the opportunity for users to post and exchange opinions, information, and data. Tech Treasure does not screen, edit, publish, or review comments prior to their appearance on the website.</p>
-        <!-- Add more sections as necessary -->
+        <div class="terms-container">
+            <h2>Terms of Use</h2>
+            <p>Welcome to Tech Treasure. By accessing or using our website, you agree to be bound by these terms and conditions. Please read them carefully.</p>
+            <h2>1. Use of the Site</h2>
+            <p>You agree to use this site for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the site.</p>
+            <h2>2. Intellectual Property</h2>
+            <p>All content on this site, including text, graphics, logos, and images, is the property of Tech Treasure or its content suppliers and is protected by copyright laws.</p>
+            <h2>3. Limitation of Liability</h2>
+            <p>Tech Treasure will not be liable for any damages arising from the use or inability to use this site.</p>
+            <h2>4. Changes to the Terms</h2>
+            <p>We reserve the right to make changes to these terms at any time. Your continued use of the site will signify your acceptance of any adjustments.</p>
+        </div>
     </main>
-    <footer class="footer">
+    <footer>
         <p>&copy; 2024 by TechTreasure.org. All Rights Reserved.</p>
         <p>
             <a href="about.html">About Us</a>
