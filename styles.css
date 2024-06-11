@@ -16,6 +16,9 @@ header {
 header h3{
 	padding-left: 30px;
 	font-family: Jomhuria;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 	
 }
 header img {
