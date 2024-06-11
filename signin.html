@@ -5,10 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="signinandcart.css">
-    
-	<link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
     <style>
-      
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h3 {
+            font-family: 'Jomhuria', sans-serif;
+            margin: 0;
+            padding-left: 30px;
+        }
+
+        header .search-bar {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        header .search-bar input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+
+        header .search-bar input[type="submit"] {
+            padding: 10px;
+            border: none;
+            background-color: orange;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        nav {
+            margin-right: 30px;
+        }
+
+        nav a {
+            font-size: 20px;
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
         .sign-in-container {
             background-color: #fff;
             padding: 40px;
@@ -94,8 +161,7 @@
 </head>
 <body>
     <header>
-       <a href = "index.html"><h3><pre>Tech
-Treasure</pre></h3></a>
+        <a href="index.html"><h3>Tech Treasure</h3></a>
         <div class="search-bar">
             <input type="text" placeholder="Search...">
             <input type="submit" value="Search">
